@@ -21,7 +21,7 @@ body {
     color: #ebedf2;
 }
 
-.section.two {
+.section.two, .section.four {
     background-color: white;
     color: #1F2937;
 }
@@ -30,8 +30,19 @@ body {
     color:#1F2937;
 }
 
+.section.four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
+.section.footer {
+    height: fit-content;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #1F2937;
+    color: #ebedf2;
+}
 
 .mt2 {
     text-align: center;
@@ -57,6 +68,11 @@ body {
     border: 2px solid #1F2937;
     border-radius: 1rem;
 }
+
+.teamimghold:hover {
+    background-color: #1F2937;
+    transition: 500ms;
+}
 section>div {
     margin: 0 12rem 0 12rem;
 }
@@ -76,6 +92,9 @@ h3 {
 .nav-links {
     display: flex;
     gap: 1.5rem;
+}
+.nav-links>span:hover {
+    font-style: italic;
 }
 
 .landing {
@@ -103,9 +122,14 @@ h3 {
     background-color: #3882f6;
     color:#E5E7EB;
     border-radius: 10px;
-    padding: 10px;
+    padding: 10px 30px 10px 30px;
 }
+#landing-text>#landing-button:hover {
+    background-color: #ebedf2;
+    color: #3882f6;
+    transition: all 500ms;
 
+}
 #landing-img {
     flex: 1;
 }
@@ -124,4 +148,33 @@ h3 {
 .source {
     font-size: 1rem;
     text-align: right;
+}
+
+.cta {
+    padding: 5rem;
+    width: 60%;
+    background-color: #3882f6;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+h4 {
+    font-size: 1.4rem;
+    margin: 0 !important;
+    line-height: 0px;
+}
+.cta-btn>button {
+    color: white;
+    border: 2px solid white;
+    background: none;
+    border-radius: 10px;
+    padding: 10px 30px 10px 30px;
+}
+
+.cta-btn>button:hover {
+    background-color: white;
+    color: #3882f6;
+    transition: all 500ms;
 }
