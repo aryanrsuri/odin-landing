@@ -8,17 +8,49 @@ body {
     --quotebg: #E5E7EB;
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     color: #ebedf2 !important;
+    margin: 0;
 }
 
-#section-one {
-    width: 100vw;
-    /* height: max-content; */
-    height: 50vh;
-    position: absolute;
-    top: 0;
-    left: 0;
+.section {
+    width: 100%;
+    height: 60vh;
+}
+
+.section.one {
     background-color: #1F2937;
     color: #ebedf2;
+}
+
+.section.two {
+    background-color: white;
+    color: #1F2937;
+}
+.section.two {
+    align-items: center;
+}
+.mt2 {
+    text-align: center;
+    margin: 3rem 12rem 3rem 12rem;
+}
+
+.team-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4rem;
+}
+
+.team-images>.team-images-cont {
+    margin-top: 0;
+    text-align: center;
+}
+
+.teamimghold {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #3882f6;
+    border-radius: 1rem;
 }
 section>div {
     margin: 0 12rem 0 12rem;
@@ -27,7 +59,7 @@ section>.nav-header {
     flex-direction: row;
     display: flex;
     align-items: center;
-    gap: 65%;
+    gap: 45vw;
 }
 h3 {
     font-size: 1.5rem;
@@ -44,17 +76,19 @@ h3 {
 .landing {
   margin-top: 6rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
+  gap: 20vw;
+}
+#landing-text {
+    max-width: 450px;
+    word-wrap: break-word;
 }
 
-.landing>div {
-  flex:1
-}
 #landing-text>div {
     margin: 0.5rem 0 0.5rem 0;
 }
-#landing-logo {
+.header-text {
     font-size: 3rem;
     font-weight: 600;
 }
@@ -66,3 +100,8 @@ h3 {
     border-radius: 10px;
     padding: 10px;
 }
+
+#landing-img {
+    flex: 1;
+}
+
