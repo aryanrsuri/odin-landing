@@ -52,7 +52,7 @@ body {
 .team-images {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 4rem;
 }
@@ -80,7 +80,7 @@ section>.nav-header {
     flex-direction: row;
     display: flex;
     align-items: center;
-    gap: 45vw;
+    justify-content: space-between;
 }
 h3 {
     font-size: 1.5rem;
@@ -100,9 +100,8 @@ h3 {
 .landing {
   margin-top: 6rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  gap: 20vw;
 }
 #landing-text {
     max-width: 450px;
@@ -129,9 +128,6 @@ h3 {
     color: #3882f6;
     transition: all 500ms;
 
-}
-#landing-img {
-    flex: 1;
 }
 
 .testamonial {
